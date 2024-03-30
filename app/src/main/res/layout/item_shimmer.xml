@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    app:shimmer_auto_start="true"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/grey_dark"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:scaleType="fitXY"
+                    android:id="@+id/ivImage"
+                    tools:src="@drawable/ic_launcher_background" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:padding="0dp"
+                    android:background="@color/grey_dark"
+                    android:id="@+id/btnSave"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAuthor"
+                tools:text="author: ahmed"
+                android:maxLines="1"
+                android:background="@color/grey_dark"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                tools:text="title"
+                android:maxLines="1"
+                android:background="@color/grey_dark"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDescription"
+                android:background="@color/grey_dark"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:maxLines="2"
+                android:gravity="center"
+                tools:text="description"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDate"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:background="@color/grey_dark"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="15sp"
+                android:maxLines="2"
+                android:gravity="center"
+                tools:text="date"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+</com.facebook.shimmer.ShimmerFrameLayout>

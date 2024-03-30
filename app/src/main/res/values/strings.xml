@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">task</string>
+    <string name="favorite">favorite</string>
+    <string name="search">Search</string>
+</resources>
